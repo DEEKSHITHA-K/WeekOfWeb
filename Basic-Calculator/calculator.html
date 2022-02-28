@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+	<h1> Calculator</h1>
+	<input type = "text" id = "calc" value="" name = "inputText">
+    <button onclick="getMeResult()">Submit</button>
+	<h1 id  = "result">result</h1>
+
+
+	<script> 
+        function getMeResult() {
+        	var number = document.getElementById("calc").value;
+        	var result = eval(number);
+        	document.getElementById("result").textContent ="result is " + result;
+        }
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+body{
+	background-color: gold;
+}	
+h1{
+	background-color: lightyellow;
+	color: red;
+	font-size: 50px; 
+    margin-left: 250px; /* margin : 65px 163px 91px 163px */
+    margin-top: 3px;
+
+    
+}
+ .title{
+ 	background-color: white;
+ }
+
+.name {
+	background-color: yellow;
+}
+
+.padding {
+    padding-left: 120px;
+}
+h2{
+	background-color: white;
+	margin-left: 250px;
+}
+
+
+div{
+	background-color: blanchedalmond;
+    border: black;
+    border-style: solid;
+    border-width: thick;
+    background-image: url(https://www-dacast-com.exactdn.com/wp-content/uploads/2020/02/html5_dacast1-1024x576.jpg?strip=all&lossy=1&resize=1020%2C574&ssl=1);
+    background-size: contain;
+    background-repeat-x: no-repeat;
+    /*margin-top: 40px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-left: 300;
+*/
+}
+@media screen and (max-width: 500px){
+    body{
+        background-color: lightgreen;
+    }
+}
+
+.btnorange{
+    background-color: black;
+}
+
+/*<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>*/

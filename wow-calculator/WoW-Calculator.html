@@ -1,0 +1,87 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body>
+   	<div style="padding-top: 20px; padding-left: 20px;" >
+   <p class = "head">WOW CALCULATOR</p>
+   	<div class="input-group mb-3" style="width: 200px;">
+        <input type="text" id = "result" class="form-control" placeholder="Enter here..." aria-label="Recipient's username" aria-describedby="button-addon2">
+        <input class="btn btn-outline-primary" type="button" value="C" onclick ="erase()" style="border: solid; border-color: blue; border-width: 2px; "/>
+    </div>
+	
+	<div>
+	<input class="btn btn-warning btn-lg" type="button" value="+" onclick="show('+')" style="border: solid; border-color: black; border-width:2px;">
+    <input class="btn btn-warning btn-lg" type="button" value="-" onclick="show('-')" style="border: solid; border-color: black; border-width:2px;">
+    <input class="btn btn-warning btn-lg" type="button" value="*" onclick="show('*')" style="border: solid; border-color: black; border-width:2px;">
+    <input class="btn btn-warning btn-lg" type="button" value="/" onclick="show('/')" style="border: solid; border-color: black; border-width:2px; padding-left:20px;">
+</div>
+
+
+<div>
+
+
+
+    <input class="btn btn-primary btn-lg" type="button" value="1" onclick="show('1')" style="border: solid; border-color: black; border-width:2px">
+    <input class="btn btn-primary btn-lg" type="button" value="2" onclick="show('2')" style="border: solid; border-color: black; border-width:2px">
+    <input class="btn btn-primary btn-lg" type="button" value="3" onclick="show('3')" style="border: solid; border-color: black; border-width:2px">
+    <input class="btn btn-secondary btn-lg" type="button" value="0" onclick="show('0')" style="border: solid; border-color: black; border-width:2px">
+
+</div>
+<div>
+	<input class="btn btn-primary btn-lg" type="button" value="4" onclick="show('4')" style="border: solid; border-color: black; border-width:2px;">
+    <input class="btn btn-primary btn-lg" type="button" value="5" onclick="show('5')" style="border: solid; border-color: black; border-width:2px;">
+    <input class="btn btn-primary btn-lg" type="button" value="6" onclick="show('6')" style="border: solid; border-color: black; border-width:2px;">
+    <input class="btn btn-secondary btn-lg" type="button" value=". " onclick="show('.')" style="border: solid; border-color: black; border-width:2px;">
+</div>
+<div>
+	<input class="btn btn-primary btn-lg" type="button" value="7" onclick ="show('7')" style="border: solid; border-color: black; border-width:2px;"/>
+    <input class="btn btn-primary btn-lg" type="button" value="8" onclick="show('8')" style="border: solid; border-color: black; border-width:2px;"/>
+    <input class="btn btn-primary btn-lg" type="button" value="9" onclick="show('9')" style="border: solid; border-color: black; border-width:2px;"/>
+    <input class="btn btn-success btn-lg" type = "button" value="=" onclick="solve()" style="border: solid; border-color: black; border-width:2px;"/> 
+</div>
+
+<style>
+	body{
+		background-color: white;
+	}
+	.head{
+		color: red;
+		margin-bottom: 10px;
+         text-align:center;
+         width: 200px;
+         border: solid black 2px;
+         font-size: large;
+	}
+</style>
+
+
+
+
+
+<script>
+	function show(val)
+         {
+
+             document.getElementById("result").value+=val
+         }
+
+    function solve(){
+    	    var x = document.getElementById("result").value;
+    	    var y = eval(x);
+    	    document.getElementById("result").value = y;
+    }
+
+    function erase()
+    {
+    	document.getElementById("result").value = "";
+    }
+    
+
+</script>
+
+<meta name = "viewport" content="width = device-width, initial-scale=1.0">
+</body>
+
+
+</html>
