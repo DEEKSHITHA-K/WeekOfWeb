@@ -71,7 +71,7 @@ loadImages((images) => {
 
 	let aux = () => {
 
-		let selectedAnimations;
+		let selectedAnimation;
 
 		if (queuedAnimations.length === 0){
 			selectedAnimation = "idle"

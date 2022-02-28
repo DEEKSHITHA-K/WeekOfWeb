@@ -12,8 +12,8 @@
 
 	<script> 
         function getMeResult() {
-        	var number = document.getElementById("calc").value;
-        	var result = eval(number);
+        	var number = document.getElementById("calc").value;   //  .value will give you the value of the expression entered in text box. For more details refer https://www.w3schools.com/jsref/prop_text_value.asp
+        	var result = eval(number);  //eval will evaluate the expression. For more details https://www.w3schools.com/jsref/jsref_eval.asp
         	document.getElementById("result").textContent ="result is " + result;
         }
 	</script>
