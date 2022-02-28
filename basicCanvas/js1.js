@@ -1,4 +1,5 @@
 // https://www.w3schools.com/html/html5_canvas.asp -> more details in the tutorial
+// https://youtu.be/zjGsMppOKA0 -> vedic video
 
 let c = document.getElementById("myCanvas");     //We have created a 'canvas tag' in our HTML file and trying to change it with javascript.
 let ctx = c.getContext("2d");   //creating a 2d context. All successive commands are written using this context element.
