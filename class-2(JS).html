@@ -1,0 +1,69 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="myStyle2.css">	
+
+</head>
+
+<body>
+
+<h1 id = "one" class = "title"> MY FIRST WEBSITE </h1>
+<p>
+	Hello. Iam <b> Dekshitha </b>.
+</p>
+
+
+<p>
+	This is my <b>first website</b>. It is a HTML website.<br /><i><u>HTML is a language used to creat website </u></i> <br />
+</p>
+
+<p>	
+	Few tags in HTML:
+	<ul>
+		<li> br tab for new line </li>
+		<li> b tag to make text bold </li>
+		<li> i tag to make text italian </li>
+		<li> u tag to underline </li>
+		<li> img src to include picture in your website </li>
+		<li> href to include a reference website </li>
+	</ul>	
+</p>
+
+
+<img src="https://global-uploads.webflow.com/5bf64c08cc98dd2c68779d68/5bf64c08cc98ddd6a577ab9b_html5_developer.jpg" style="width: 400px;" align="center">
+
+<p>
+	I have created it using Sublime Text editor. Go through the link to download sublime editor.
+</p>
+
+
+<a href = "https://www.sublimetext.com/">sublime.com</a>
+
+<button onclick="background1()">Click</button>
+<button onclick="background2()">Click For Blue</button>
+<button onclick="fontColor()">Click to change font color</button>
+<button onclick="changeText('HI')"> Click to change h1(HI)</button>
+<button onclick="changeText('HELLO')"> Click to change h1(HELLO)</button>
+
+
+</body>	
+<script>
+	function background1(){
+		document.body.bgColor = "red";
+	}
+
+	function background2(){
+		document.body.bgColor = "blue";
+	}
+	function fontColor (){
+		document.body.style.color = "white";
+	}
+	function changeText(greeting){
+        document.getElementById("one").style.background = "red";
+        document.getElementById("one").style.color = "blue";
+        document.getElementById("one").textContent = greeting;
+	}
+
+</script>
+ </html>
